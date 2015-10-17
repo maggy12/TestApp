@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" rel="stylesheet" media="screen" href="Main_css.css" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="typeahead.js"></script>
+    <script type="text/javascript" src="browse-file.js"></script>
+</head>
+
+<body>
+
+
+<div class="container-fluid">
+
+<div class="col-md-12">
+   <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <div id="imaginary_container"> 
+                <div id="the-basics" class="input-group stylish-input-group">
+                    <input id="tags" type="text" class="form-control typeahead"  placeholder="Search" >
+                    <span class="input-group-addon">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>  
+                    </span>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+    
+<div class="col-md-12" id=main_btns>    
+        <div id="show_all" class = "btn_showall">
+           <p><a data-toggle="modal" href="#form-content" class="btn btn-link" role="link">Show All</a></p>
+        </div>
+
+     <div id="create" class = "btn_create">
+             <p><a data-toggle="modal" href="#form-content" class="btn btn-link" role="link" data-target="#myModalHorizontal">Create New Answer</a></p>
+     </div>
+</div>
+
+    
+    <div id = "testLoad" class = "col-md-6">
+       <h4>Most Recent Answers</h4> 
+                <dl>
+                    <dt><a class="btn btn-link" role="link" href="AnswersPage.html">How to make a responsive application?</a></dt>
+                  <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+                  <dt><a class="btn btn-link" role="link"href="AnswersPage.html">How to implement a servlet?</a></dt>
+                  <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</dd>
+                  <dt><a class="btn btn-link" role="link" href="AnswersPage.html">What is an MVC pattern ?</a></dt>
+                  <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+                <dt><a  class="btn btn-link" role="link" href="AnswersPage.html">What does data binding mean ?</a></dt>
+                  <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+                </dl>
+      
+    </div>
+    <div class = "col-md-6">
+    <h4>Most Asked Questions</h4>
+                <dl>
+                  <dt><a  id = "q1"  class="btn btn-link" role="link" href="AnswersPage.html">How to use bootstrap ? </a></dt>
+                  <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+                  <dt><a class="btn btn-link" href="AnswersPage.html" role="link" data target="#myquestion">How to use JQuery ?</a></dt>
+                  <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</dd>
+                  <dt><a class="btn btn-link" role="link" href="AnswersPage.html">How to use Backbone.js ?</a></dt>
+                  <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
+                </dl>
+    
+    </div>
+    
+ </div>
+    
+    
+<div class="modal fade" id="myModalHorizontal" tabindex="-1" role="dialog" 
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" 
+                   data-dismiss="modal">
+                       <span aria-hidden="true">&times;</span>
+                       <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    New Answer
+                </h4>
+            </div>
+             <div class="modal-body">
+                
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" 
+                        id="inputTilte" placeholder="Title"/>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-10">
+                    <textarea class="form-control" rows="5" id="comment" placeholder="Content"></textarea>
+                  </div>
+                  </div>
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                      <span class="btn btn-primary btn-file">
+                        Browse&hellip; <input type="file" multiple>
+                      </span>
+                    </span>
+                   <input type="text" class="form-control" readonly>
+                  </div>
+                 
+                </form>
+                
+            </div>
+            <div class="modal-footer">
+				<input class="btn btn-success" type="submit" value="Submit" id="submit">
+				<a href="#" class="btn" data-dismiss="modal">Cancel</a>
+			</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
